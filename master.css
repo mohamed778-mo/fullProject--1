@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: rgb(241, 245, 247);
+    display: flex;
+    z-index: 999;           /* رقم كبير عشان يختلف عن البقيه */
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding:10px 200px;
+    
+
+}
+
+.logo{
+    text-decoration: none;
+    color: rgb(5, 58, 88);
+    text-transform: uppercase;
+    font-weight: 700;    /* تخنه */
+    font-size: 1.8em;    /* 1.8 x 16px */
+
+}
+
+
+.navigation a{
+    text-decoration: none;
+    color: rgb(3, 41, 65);
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 15px;
+}
+.navigation a:hover{
+    color: rgb(128, 21, 199);
+}
+.main{
+    padding: 100px 200px;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background: url(photos/background.jpg) no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 10px; 
+    
+}  
+.first h2{
+    padding-top: 115px;
+    color:  rgb(1, 16, 19);
+}
+.first h2 span{
+    font-weight: 900;
+    font-size: 2.5em;
+    color: rgb(7, 48, 95);
+}
+
+.first h3{
+    color: rgb(1, 16, 19);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+
+.butt{
+    text-decoration: none;
+    color: white;
+    display:inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0.899em 2em;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    background-color: rgb(7, 48, 95);
+    letter-spacing: 1px;
+    transition: 0.7s ease;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+}
+.butt:hover{
+    background-color: blueviolet;
+    transform: scale(1.1,1.2 );
+    -webkit-transform: scale(1.1,1.2 );
+    -moz-transform: scale(1.1,1.2 );
+    -ms-transform: scale(1.1,1.2 );
+    -o-transform: scale(1.1,1.2 );
+}
+
+.social-icons a{
+    color: rgb(1, 16, 19);
+    padding: 25px;
+    font-size: 1.2em;
+}
+
+.tittle{ 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 1.5em;
+    font-weight: 900;
+    width: 100%;
+
+}
+
+
+.content{
+    display: flex;
+    flex-direction: row;       /* عشان اخليهم تحت بعض  */ /* coulmnلو عاوزهم تحت بعض يبقى      */
+    justify-content: center;
+    flex-wrap: wrap;           /* عشان لما الشاشه تصغر اللى ملوش مكان ينزل تحت مش يصغر    */
+         }
+
+
+.card{
+    background-color:  #dbe5e7;
+    width: 19em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /0.22 ) ;
+    padding: 20px;
+    margin: 20px;
+    transition: 0.7s ease;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}        
+
+.logo{
+    color:  rgb(1, 16, 19);
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+
+}
+.info{
+    display: flex;
+    justify-content: center;
+
+}
+.projects-2{
+    background-color:  rgb(3, 41, 65);;
+    width: 100%;
+}
+
+.projects-2 .content-2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+.tittle-2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 900;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(230, 233, 238);
+    
+}
+
+.project-card{
+    
+    background-color: #dbe5e7;
+    width: 270px;
+    height: 273px;
+    border: 2px solid white;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    transition: 0.7s ease;
+        -webkit-transition: 0.7s ease;
+        -moz-transition: 0.7s ease;
+        -ms-transition: 0.7s ease;
+        -o-transition: 0.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+         -webkit-transform: scale(1.1);
+         -moz-transform: scale(1.1);
+         -ms-transform: scale(1.1);
+         -o-transform: scale(1.1);
+}
+.project-img  img{
+    width: 100%;
+
+}
+
+.project-card:hover .project-img{
+    opacity: 0.5;
+}
+.info-1{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.info-1 .m-d{
+    text-decoration: none;
+    font-size: 1.1em;
+    color: rgb(38, 137, 161);
+    
+}
+.m-d:hover{
+    color: blueviolet;
+
+}
+
+
+
+.card-contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.tittle-3{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 900;
+    color:rgb(5, 58, 88) ;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.card-4{
+    background-color: #dbe5e7;
+    box-shadow: 0 5px 25px rgba(5, 5, 5, 0.22);
+    transition: 0.7s ease;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+    
+    width: 19em;
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+.card-4:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.logo-3{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 2em;
+       
+}
+
+.info-3{
+    display: flex;
+    justify-content: center;
+    color: black;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer{
+    background-color: rgb(5, 58, 88) ;
+    display: flex;
+    justify-content: space-between;
+    height: 38px;
+}
+.footer p{
+    color: #dbe5e7;
+}
+.social-icons2 a{
+ 
+justify-content: right; 
+font-weight: 800;
+color: rgb(245, 245, 245);
+font-size: 1.2em;
+padding: 10px;
+}
