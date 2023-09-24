@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.all-cards{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px auto;
+    flex-wrap: wrap;
+}
+.one-card{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 384px;
+}
+.edit-button{
+    cursor: pointer;
+}
+.create-text::after {
+    content: " ❤️";
+    opacity: 0;
+    transition: all ease-in-out 1s;
+}
+.create-text:hover::after{
+    opacity: 1;
+}
+.form-area{
+    height: 80px;
+    resize:none
+}
+.post-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.web-header{
+    border-bottom: 1px solid #000;
+    width: 80%;
+    margin: 1px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 10px; */
+}
+.header-right{
+    display: flex;
+    flex-direction: row;
+}
+.header-left{
+    margin-top: 20px;
+    width: 80px;
+    height: 60px;
+}
+.header-left img{
+    width: 80px;
+    height: 60px;
+}
+.please{
+    font-size: 40px;
+    font-weight: 700;
+    margin:40px 80px;
+    color: rgb(108, 28, 28);
+}

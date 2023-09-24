@@ -1,0 +1,43 @@
+.header{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.header p {
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: larger;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.header p::after {
+    content:"";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    border-top: 2px solid rgb(67, 5, 68);
+    border-bottom: 2px solid rgb(67, 5, 68);
+    transition: all .5s ease-in-out;
+}
+.header p:hover::after {
+    width: 100%;
+}
+.header p::before {
+    content:"";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-right: 2px solid rgb(67, 5, 68);
+    border-left: 2px solid rgb(67, 5, 68);
+    transition: all .5s ease-in-out;
+    transform: scaleY(0);
+}
+.header p:hover::before {
+    transform: scaleY(1);
+}
